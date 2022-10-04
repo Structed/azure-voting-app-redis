@@ -45,5 +45,5 @@ jobs:
           namespace: 'azure-vote'
           manifests: |
              azure-vote-all-in-one-redis.yaml
-          images: '${{ secrets.registry }}.azurecr.io/azure-vote-front:${{ github.sha }}'
+          images: '${{ secrets.registry }}.azurecr.io/azure-vote-front/azure-vote-front:${{ github.sha }}'
           pull-images: false
